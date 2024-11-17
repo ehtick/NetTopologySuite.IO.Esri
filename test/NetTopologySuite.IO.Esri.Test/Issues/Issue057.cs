@@ -4,14 +4,14 @@ using NUnit.Framework;
 namespace NetTopologySuite.IO.Esri.Test.Issues;
 
 /// <summary>
-/// https://github.com/NetTopologySuite/NetTopologySuite.IO.Esri/issues/57
+/// https://github.com/NetTopologySuite/NetTopologySuite.IO.Esri/issues/55
 /// </summary>
 internal class Issue057
 {
     [Test]
     public void Decimal0_OpenShapefile()
     {
-        var shpPath = TestShapefiles.PathTo("Issues/057/deter-nf-deter-public.shp");
+        var shpPath = TestShapefiles.PathTo("Issues/055/deter-nf-deter-public.shp");
         var options = new ShapefileReaderOptions
         {
             GeometryBuilderMode = GeometryBuilderMode.FixInvalidShapes
